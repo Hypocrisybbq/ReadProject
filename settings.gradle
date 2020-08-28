@@ -1,0 +1,3 @@
+include ':ReadModule'
+include ':app'
+rootProject.name = "ReadProject"
