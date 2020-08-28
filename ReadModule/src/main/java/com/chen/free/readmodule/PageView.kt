@@ -97,6 +97,10 @@ class PageView @JvmOverloads constructor(
                     scrollEndX = measuredWidth - moveDistance
                 } else if (moveDistance < 0) {
                     scrollEndX = -measuredWidth - moveDistance
+                }else{
+
+                    //没有滑动距离，代表是单纯的点击。
+                    //上和左表示往前翻页，下和右往后翻页，点中间弹出菜单栏
                 }
                 scroller.startScroll(scrollStartX.toInt(), 0, scrollEndX.toInt(), 0, 200)
 
